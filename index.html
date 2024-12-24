@@ -9,11 +9,23 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <!-- Image ajoutée avec un class pour le style -->
-            <img src="image-noel.jpg" alt="Joyeux Noël" class="image-noel">
-            
-            <h1>🎄 Joyeux Noël et Bonne Année ! 🎉</h1>
-            <p>Avec tout mon cœur, je te souhaite des fêtes remplies de joie et de bonheur.</p>
+            <!-- Sélecteur de langue -->
+            <div id="language-selector">
+                <label for="lang">Choisissez la langue / Choose language: </label>
+                <select id="lang" onchange="changeLanguage()">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <!-- Image de Noël -->
+            <img src="image-noel.jpg" alt="Image de Noël" class="image-noel">
+
+            <!-- Texte dynamique -->
+            <h1 id="greeting">🎄 Joyeux Noël et Bonne Année ! 🎉</h1>
+            <p id="message">Avec tout mon cœur, je te souhaite des fêtes remplies de joie et de bonheur.</p>
+
+            <!-- Bouton pour écouter le message -->
             <button id="playAudio">Écouter mon message</button>
             <audio id="voeuxAudio" src="voeux.mp3"></audio>
         </div>
