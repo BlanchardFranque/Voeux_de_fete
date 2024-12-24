@@ -5,7 +5,7 @@ function changeLanguage() {
     var messages = {
         "fr": {
             "greeting": "🎄 Joyeux Noël et Bonne Année ! 🎉",
-            "message": "Avec tout mon cœur, je te souhaite des fêtes remplies de joie et de bonheur! Votre Serviteur Franque Blanchard.",
+            "message": "Avec tout mon cœur, je te souhaite des fêtes remplies de joie et de bonheur.",
             "buttonText": "Écouter mon message"
         },
         // Texte en anglais
