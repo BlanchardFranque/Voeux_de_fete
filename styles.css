@@ -9,7 +9,7 @@
 /* Général : styles de base */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Dégradé de fond */
+    background: linear-gradient(135deg, #ff0000, #0066cc, #ffcc00); /* Dégradé avec Rouge, Bleu et Jaune */
     margin: 0;
     padding: 0;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -29,7 +29,7 @@ body {
 /* Conteneur principal */
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
     padding: 30px;
     border-radius: 15px; /* Coins arrondis */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre autour de la boîte */
@@ -40,7 +40,7 @@ body {
 /* Style du titre */
 h1 {
     font-size: 2.5rem;
-    color: #4CAF50;
+    color: #ffcc00; /* Jaune pour le titre */
     margin-top: 20px;
 }
 
@@ -48,12 +48,12 @@ h1 {
 p {
     font-size: 1.2rem;
     margin: 20px 0;
-    color: #333;
+    color: #0066cc; /* Bleu pour le texte */
 }
 
 /* Style du bouton */
 button {
-    background-color: #4CAF50;
+    background-color: #ff0000; /* Rouge pour le bouton */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #cc0000; /* Rouge plus foncé au survol */
 }
 
 /* Style pour l'image */
