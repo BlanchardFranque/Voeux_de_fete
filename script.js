@@ -32,6 +32,6 @@ playButton.addEventListener('click', () => {
         playButton.textContent = "Pause";
     } else {
         audio.pause();
-        playButton.textContent = "Écouter mon message";
+        playButton.textContent = "Cliquez Ici Pour Écouter Le Message";
     }
 });
