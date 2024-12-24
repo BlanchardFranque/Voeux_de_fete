@@ -9,7 +9,7 @@
 /* Général : styles de base */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff0000, #0066cc, #ffcc00); /* Dégradé avec Rouge, Bleu et Jaune */
+    background: linear-gradient(135deg, #ff0000, #0066cc, #ffcc00); /* Dégradé de la page */
     margin: 0;
     padding: 0;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -26,10 +26,10 @@ body {
     height: 100%;
 }
 
-/* Conteneur principal */
+/* Conteneur principal avec un fond en dégradé */
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
+    background: linear-gradient(45deg, #ff0000 33%, #0066cc 33%, #0066cc 66%, #ffcc00 66%); /* Dégradé avec trois couleurs */
     padding: 30px;
     border-radius: 15px; /* Coins arrondis */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre autour de la boîte */
@@ -107,5 +107,6 @@ button:hover {
         font-size: 0.9rem; /* Réduit la taille du texte du bouton */
     }
 }
+
 
 </html>
