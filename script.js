@@ -10,7 +10,7 @@ function changeLanguage() {
         },
         // Texte en anglais
         "en": {
-            "greeting": "🎄 Merry Christmas and Happy New Year! 🎉",
+            "greeting": "🎄 Merry Christmas and Happy New Year, Dears All! 🎉",
             "message": "With all my heart, I wish you holidays full of joy and happiness.",
             "buttonText": "Listen to my message"
         }
