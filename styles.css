@@ -6,14 +6,52 @@
     <title>Joyeux Noël et Bonne Année</title>
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
 </head>
-<body>
-    <div class="container">
-        <h1>🎄 Joyeux Noël et Bonne Année ! 🎉</h1>
-        <p>Avec tout mon cœur, je vous souhaite des fêtes remplies de joie et de bonheur.</p>
-        <button id="playAudio">Écouter mon message</button>
-        <audio id="voeuxAudio" src="voeux.mp3"></audio>
-    </div>
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
-</body>
+.container {
+    padding: 50px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style pour l'image */
+.image-noel {
+    width: 250px; /* Largeur de l'image */
+    height: 250px; /* Hauteur pour que l'image soit carrée */
+    object-fit: cover; /* Garantit que l'image couvre complètement la zone sans être déformée */
+    border-radius: 50%; /* Image en cercle */
+    margin-bottom: 20px; /* Espacement sous l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour de l'image */
+}
+
 </html>
