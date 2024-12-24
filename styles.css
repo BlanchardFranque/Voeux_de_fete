@@ -6,6 +6,7 @@
     <title>Joyeux Noël et Bonne Année à tous!</title>
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
 </head>
+
 /* Général : styles de base */
 body {
     font-family: 'Arial', sans-serif;
@@ -107,5 +108,6 @@ button:hover {
         font-size: 0.9rem; /* Réduit la taille du texte du bouton */
     }
 }
+
 
 </html>
