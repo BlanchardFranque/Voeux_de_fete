@@ -1,20 +1,50 @@
-/* Conteneur pour l'image et le message */
-.image-wrapper {
+/* Conteneur principal pour l'image et le message circulaire */
+.circle-container {
     position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
 }
 
-.image-wrapper p {
+.image-noel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
     position: absolute;
-    top: 50%; /* Position centrale */
+    top: 0;
+    left: 0;
+}
+
+/* Message circulaire autour de l'image */
+.circle-message {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 1.2rem;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    padding: 5px 10px;
-    border-radius: 10px; /* Coins arrondis */
+    color: white;
+    background: rgba(0, 0, 0, 0.3); /* Fond semi-transparent */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px dashed white; /* Ajout d'une bordure pour l'effet circulaire */
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+    .circle-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-message {
+        font-size: 1rem;
+    }
 }
