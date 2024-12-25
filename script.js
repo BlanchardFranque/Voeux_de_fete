@@ -4,13 +4,15 @@ const messages = {
         "greeting": "🎄 Joyeux Noël 2024 et Bonne Année 2025 à tous! 🎉",
         "message": "Avec tout mon cœur, je vous souhaite des fêtes remplies de joie et de bonheur, Votre Serviteur Franque Blanchard.",
         "buttonText": "Cliquez Ici Pour Écouter Le Message",
-        "audioSrc": "voeux.mp3" // Fichier audio en français
+        "audioSrc": "voeux.mp3", // Fichier audio en français
+        "imageMessage": "Mes vœux les meilleurs pour vous"
     },
     "en": {
         "greeting": "🎄 Merry Christmas 2024 and Happy New Year 2025, Dear All! 🎉",
         "message": "With all my heart, I wish you holidays full of joy and happiness! All the best in your life.",
         "buttonText": "Click Here To Listen To The Message",
-        "audioSrc": "voeu.mp3" // Fichier audio en anglais
+        "audioSrc": "voeu.mp3", // Fichier audio en anglais
+        "imageMessage": "My Wishings to you"
     }
 };
 
@@ -49,6 +51,9 @@ function setLanguage(language) {
     // Mettre à jour la source de l'audio
     const audioElement = document.getElementById('voeuxAudio');
     audioElement.src = messages[language].audioSrc;
+
+    // Mettre à jour le message autour de l'image
+    document.getElementById('image-message').innerText = messages[language].imageMessage;
 
     // Ajuster le texte du bouton si l'audio est en pause
     if (audioElement.paused) {
