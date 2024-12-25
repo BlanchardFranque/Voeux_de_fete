@@ -5,13 +5,13 @@ function changeLanguage() {
     var messages = {
         "fr": {
             "greeting": "🎄 Joyeux Noël 2024 et Bonne Année 2025 à tous! 🎉",
-            "message": "Avec tout mon cœur, je te souhaite des fêtes remplies de joie et de bonheur, Votre Serviteur Franque Blanchard.",
+            "message": "Avec tout mon cœur, je vous souhaite des fêtes remplies de joie et de bonheur, Votre Serviteur Franque Blanchard.",
             "buttonText": "Écouter mon message"
         },
         // Texte en anglais
         "en": {
             "greeting": "🎄 Merry Christmas 2024 and Happy New Year 2025, Dears All! 🎉",
-            "message": "With all my heart, I wish you holidays full of joy and happiness ! Your Servant Franque Blanchard.",
+            "message": "With all my heart, I wish you holidays full of joy and happiness ! All the best in your Live",
             "buttonText": "Listen to my message"
         }
     };
