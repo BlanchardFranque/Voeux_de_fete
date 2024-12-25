@@ -1,131 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyeux Noël 2024 et Bonne Année 2025 à tous!</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+/* Conteneur pour l'image et le message */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-    <!-- Balises Open Graph -->
-    <meta property="og:title" content="Joyeux Noël 2024 et Bonne Année 2025 à tous!" />
-    <meta property="og:description" content="Un message de fêtes rempli de chaleur et de joie." />
-    <meta property="og:image" content="https://blanchardfranque.github.io/images/mon-image.jpg" />
-    <meta property="og:url" content="https://blanchardfranque.github.io/Voeux_de_fete/" />
-    <meta property="og:type" content="website" />
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <img src="https://blanchardfranque.github.io/images/mon-image.jpg" alt="Image de Noël" class="image-noel">
-            <h1>Joyeux Noël et Bonne Année!</h1>
-            <p>Un message de fêtes rempli de chaleur et de joie.</p>
-            <button>Envoyer mes vœux</button>
-        </div>
-    </div>
-
-    <!-- Styles CSS internes -->
-    <style>
-        /* Général : styles de base */
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Dégradé de fond */
-            margin: 0;
-            padding: 0;
-            display: flex; /* Utilisation de flexbox pour centrer le contenu */
-            justify-content: center; /* Centrer horizontalement */
-            align-items: center; /* Centrer verticalement */
-            height: 100vh; /* Hauteur de la fenêtre du navigateur */
-        }
-
-        /* Wrapper pour centrer le contenu */
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-
-        /* Conteneur principal */
-        .container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
-            padding: 30px;
-            border-radius: 15px; /* Coins arrondis */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre autour de la boîte */
-            max-width: 90%; /* Limite la largeur pour les petits écrans */
-            width: 500px; /* Largeur fixe pour les écrans plus grands */
-        }
-
-        /* Style du titre */
-        h1 {
-            font-size: 2.5rem;
-            color: #4CAF50;
-            margin-top: 20px;
-        }
-
-        /* Style du texte */
-        p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            color: #333;
-        }
-
-        /* Style du bouton */
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        /* Style pour l'image */
-        .image-noel {
-            width: 250px; /* Largeur de l'image */
-            height: 250px; /* Hauteur pour que l'image soit carrée */
-            object-fit: cover; /* Garantir que l'image couvre le cadre */
-            border-radius: 50%; /* Image en cercle */
-            margin-bottom: 20px; /* Espace sous l'image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour de l'image */
-        }
-
-        /* Ajout d'une animation légère sur l'image */
-        .image-noel:hover {
-            transform: scale(1.1); /* Légère agrandissement au survol */
-            transition: transform 0.3s ease-in-out; /* Animation fluide */
-        }
-
-        /* Responsivité : ajustement pour les petits écrans */
-        @media (max-width: 600px) {
-            .container {
-                width: 100%; /* Utilise 100% de la largeur de l'écran pour les petits appareils */
-                padding: 15px; /* Réduit le padding sur les petits écrans */
-            }
-
-            h1 {
-                font-size: 2rem; /* Réduit la taille du titre */
-            }
-
-            p {
-                font-size: 1rem; /* Réduit la taille du texte */
-            }
-
-            .image-noel {
-                width: 200px; /* Réduit la taille de l'image sur les petits écrans */
-                height: 200px;
-            }
-
-            button {
-                padding: 8px 16px; /* Réduit la taille du bouton */
-                font-size: 0.9rem; /* Réduit la taille du texte du bouton */
-            }
-        }
-    </style>
-</body>
-</html>
+.image-wrapper p {
+    position: absolute;
+    top: 50%; /* Position centrale */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 5px 10px;
+    border-radius: 10px; /* Coins arrondis */
+}
